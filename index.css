@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  background-color: #a9e5e5;
+  background-image: url(https://image.freepik.com/free-vector/winter-background-with-pastel-color-brushes-leaves_220290-42.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 header {
@@ -7,30 +11,87 @@ header {
   height: 80px;
   position: sticky;
   top: 0;
+  opacity: 0.5;
+}
+header h1 {
+  display: inline-block;
+  text-shadow: 4px 4px 10px gray;
+  padding-left: 20px;
+}
+header p {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  left: 20px
 }
 
 footer {
   background-color: lightgray;
-  height: 300px;
+  height: 30px;
+  position: sticky;
+  bottom: 0px;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 5px;
 }
 
 main {
   padding: 16px 10%;
-  background-color: #ffffff;
+  background-color: rgb(169, 229, 229, .5);
+  display: flex;
 }
 
 aside {
-  display: inline-block;
-  background-color: lightcoral;
-  height: 450px;
-  width: 29%;
+  flex: 19%;
+  background-color: rgba(188, 35, 35, 0.7);
+  height: 150px;
   margin-right: 1%;
-  
 }
 
+aside a {
+  display: block;
+  padding: 5px 10px;
+  color:rgb(222, 184, 135)
+}
+.content {
+  display: none;
+}
+/* aside a#link1:hover + #section1 {
+  display: block;
+} */
 section {
+  flex: 79%;
   display: inline-block;
-  background-color: burlywood;
+  background-color: rgb(222, 184, 135, 0.5);
   height: 450px;
-  width: 69%;
+  padding: 10px;
+}
+#message {
+  width: 300px;
+  height: 68px;
+  /* height: 95px; */
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 10px #aaaaaa;
+  border: 1px solid;
+  border-radius: 50px 0px 0px 10px;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  overflow-y: auto;
+}
+
+#image {
+  width: 100px;
+  float: right;
+  margin-left: 16px;
+  /* top: 100px;
+  right: 13%;
+  position: fixed; */
+  
 }
